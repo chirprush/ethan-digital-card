@@ -27,7 +27,7 @@ console.log(iv);
 const subtle = window.crypto.subtle;
 
 async function loadFile(path) {
-    const response = await fetch(path);
+    const response = await fetch(`/ethan-digital-card/${path}`);
 
     return await response.arrayBuffer();
 }
